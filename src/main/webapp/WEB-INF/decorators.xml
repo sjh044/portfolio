@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- /WEB-INF/decorators.xml -->
+<decorators defaultdir="/decorator">
+	<decorator name="board" page="decorator.jsp">
+		<pattern>*.do</pattern>
+	</decorator>
+	<!-- layout 제외 설정 -->
+	<excludes>
+		<pattern>/board/imgupload*</pattern>
+		<pattern>/user/password*</pattern>
+	</excludes>
+	
+	<decorator name="admin" page="admindeco.jsp">
+		<pattern>/admin/*</pattern>
+	</decorator>
+</decorators>
